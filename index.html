@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning JavaScript</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+
+	<body>
+
+		<p>How many fingers am I holding?</p>
+
+		<input id="answer" />
+		<button id="myButton">Submit</button>
+
+
+		<script type="text/javascript">
+
+			document.getElementById("myButton").onclick=function(){
+
+			var x=Math.random();
+
+			x=6*x;
+
+			x=Math.floor(x);
+			
+			if(x==document.getElementById("answer").value) {
+				alert("That is Correct! I am holding " + x +".");
+			} else{
+				alert("That is incorrect!" + " I am holding up " + x + " fingers.")
+			}
+			}
+		
+		</script>
+		
+
+	</body>
+</html>
